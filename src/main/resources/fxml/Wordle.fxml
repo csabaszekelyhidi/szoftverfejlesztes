@@ -5,357 +5,359 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" scaleShape="false" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" scaleShape="false" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WordleController">
     <children>
         <Text fill="#3c6e71" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Wordle" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
             <font>
                 <Font name="Bebas Neue Regular" size="80.0" />
             </font>
-         <StackPane.margin>
-            <Insets top="25.0" />
-         </StackPane.margin>
+            <StackPane.margin>
+                <Insets top="25.0" />
+            </StackPane.margin>
         </Text>
-      <GridPane alignment="CENTER" gridLinesVisible="true" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="400.0" style="-fx-border-style: solid inside; -fx-border-insets: 5;" vgap="10.0" StackPane.alignment="TOP_CENTER">
-        <columnConstraints>
-            <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <children>
-            <Text fx:id="word11" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="50.0" />
-               </font>
-            </Text>
-            <Text fx:id="word12" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="50.0" />
-               </font>
-            </Text>
-             <Text fx:id="word13" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word14" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word15" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word21" fill="WHITE" strokeWidth="0.0" text=" " GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word22" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word23" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word24" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word25" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word31" fill="WHITE" strokeWidth="0.0" text=" " GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word32" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word33" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word34" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word35" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word41" fill="WHITE" strokeWidth="0.0" text=" " GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word42" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word43" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word44" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word45" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word51" fill="WHITE" strokeWidth="0.0" text=" " GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word52" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word53" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word54" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word55" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word61" fill="WHITE" strokeWidth="0.0" text=" " GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word62" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word63" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word64" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-             <Text fx:id="word65" fill="WHITE" strokeWidth="0.0" text=" " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
-                 <font>
-                     <Font name="Bebas Neue Regular" size="50.0" />
-                 </font>
-             </Text>
-         </children>
-         <StackPane.margin>
-            <Insets top="120.0" />
-         </StackPane.margin>
-      </GridPane>
-      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
-        <items>
-            <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-          <Button fx:id="but_Q" mnemonicParsing="false" onAction="#calculate" text="Q" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="W" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="48.0" layoutY="10.0" mnemonicParsing="false" text="E" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="90.0" layoutY="10.0" mnemonicParsing="false" text="R" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="128.0" layoutY="10.0" mnemonicParsing="false" text="T" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="166.0" layoutY="10.0" mnemonicParsing="false" text="Y" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="U" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="I" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="281.0" layoutY="10.0" mnemonicParsing="false" text="O" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="281.0" layoutY="10.0" mnemonicParsing="false" text="P" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-        </items>
-         <StackPane.margin>
-            <Insets bottom="130.0" left="10.0" right="10.0" />
-         </StackPane.margin>
-      </ToolBar>
-      <ToolBar layoutX="20.0" layoutY="750.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
-         <items>
-             <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-            <Button mnemonicParsing="false" text="A" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="S" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="48.0" layoutY="10.0" mnemonicParsing="false" text="D" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="90.0" layoutY="10.0" mnemonicParsing="false" text="F" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="128.0" layoutY="10.0" mnemonicParsing="false" text="G" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="166.0" layoutY="10.0" mnemonicParsing="false" text="H" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="J" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="K" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="281.0" layoutY="10.0" mnemonicParsing="false" text="L" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-             <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-         </items>
-         <StackPane.margin>
-            <Insets bottom="80.0" left="10.0" right="10.0" />
-         </StackPane.margin>
-      </ToolBar>
-      <ToolBar layoutX="20.0" layoutY="700.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
-         <items>
-            <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-            <Button mnemonicParsing="false" text="ENTER" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Z" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="48.0" layoutY="10.0" mnemonicParsing="false" text="X" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="90.0" layoutY="10.0" mnemonicParsing="false" text="C" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="128.0" layoutY="10.0" mnemonicParsing="false" text="V" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="166.0" layoutY="10.0" mnemonicParsing="false" text="B" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="N" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="205.0" layoutY="10.0" mnemonicParsing="false" text="M" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Button layoutX="281.0" layoutY="10.0" mnemonicParsing="false" text="&lt;&lt; DEL" textAlignment="CENTER">
-               <font>
-                  <Font name="Bebas Neue Regular" size="20.0" />
-               </font>
-            </Button>
-            <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-         </items>
-         <StackPane.margin>
-            <Insets bottom="30.0" left="10.0" right="10.0" />
-         </StackPane.margin>
-      </ToolBar>
+        <GridPane fx:id="grid" alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="400.0" vgap="10.0" StackPane.alignment="TOP_CENTER">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" style="-fx-background-color: #474747; -fx-pref-height: 68px; -fx-pref-width: 68px;" text="" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="50.0" />
+                    </font>
+                </Label>
+
+
+            </children>
+            <StackPane.margin>
+                <Insets top="120.0" />
+            </StackPane.margin>
+        </GridPane>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
+            <items>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+                <Button fx:id="but_Q" mnemonicParsing="false" onAction="#calculate" text="Q" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_W" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="W" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_E" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="E" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_R" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="R" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_T" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="T" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_Y" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="Y" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_U" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="U" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_I" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="I" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_O" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="O" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_P" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="P" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+            </items>
+            <StackPane.margin>
+                <Insets bottom="130.0" left="10.0" right="10.0" />
+            </StackPane.margin>
+        </ToolBar>
+        <ToolBar layoutX="20.0" layoutY="750.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
+            <items>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+                <Button fx:id="but_A" mnemonicParsing="false" onAction="#calculate" text="A" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_S" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="S" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_D" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="D" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_F" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="F" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_G" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="G" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_H" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="H" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_J" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="J" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_K" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="K" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_L" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="L" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+            </items>
+            <StackPane.margin>
+                <Insets bottom="80.0" left="10.0" right="10.0" />
+            </StackPane.margin>
+        </ToolBar>
+        <ToolBar layoutX="20.0" layoutY="700.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
+            <items>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+                <Button fx:id="enter" mnemonicParsing="false" onAction="#enterWord" text="ENTER" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_Z" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="Z" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_X" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="X" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_C" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="C" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_V" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="V" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_B" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="B" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_N" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="N" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="but_M" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="M" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="backspace" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#backspace" text="&lt;&lt; DEL" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bebas Neue Regular" size="20.0" />
+                    </font>
+                </Button>
+                <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+            </items>
+            <StackPane.margin>
+                <Insets bottom="30.0" left="10.0" right="10.0" />
+            </StackPane.margin>
+        </ToolBar>
     </children>
 </StackPane>
