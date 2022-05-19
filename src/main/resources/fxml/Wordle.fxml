@@ -195,52 +195,52 @@
         <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
             <items>
                 <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-                <Button fx:id="but_Q" mnemonicParsing="false" onAction="#calculate" text="Q" textAlignment="CENTER">
+                <Button fx:id="but_Q" mnemonicParsing="false" onAction="#charPressed" text="Q" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_W" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="W" textAlignment="CENTER">
+                <Button fx:id="but_W" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="W" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_E" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="E" textAlignment="CENTER">
+                <Button fx:id="but_E" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="E" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_R" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="R" textAlignment="CENTER">
+                <Button fx:id="but_R" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="R" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_T" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="T" textAlignment="CENTER">
+                <Button fx:id="but_T" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="T" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_Y" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="Y" textAlignment="CENTER">
+                <Button fx:id="but_Y" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="Y" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_U" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="U" textAlignment="CENTER">
+                <Button fx:id="but_U" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="U" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_I" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="I" textAlignment="CENTER">
+                <Button fx:id="but_I" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="I" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_O" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="O" textAlignment="CENTER">
+                <Button fx:id="but_O" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="O" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_P" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="P" textAlignment="CENTER">
+                <Button fx:id="but_P" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="P" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
@@ -254,47 +254,47 @@
         <ToolBar layoutX="20.0" layoutY="750.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
             <items>
                 <Pane prefHeight="0.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
-                <Button fx:id="but_A" mnemonicParsing="false" onAction="#calculate" text="A" textAlignment="CENTER">
+                <Button fx:id="but_A" mnemonicParsing="false" onAction="#charPressed" text="A" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_S" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="S" textAlignment="CENTER">
+                <Button fx:id="but_S" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="S" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_D" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="D" textAlignment="CENTER">
+                <Button fx:id="but_D" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="D" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_F" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="F" textAlignment="CENTER">
+                <Button fx:id="but_F" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="F" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_G" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="G" textAlignment="CENTER">
+                <Button fx:id="but_G" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="G" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_H" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="H" textAlignment="CENTER">
+                <Button fx:id="but_H" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="H" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_J" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="J" textAlignment="CENTER">
+                <Button fx:id="but_J" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="J" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_K" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="K" textAlignment="CENTER">
+                <Button fx:id="but_K" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="K" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_L" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="L" textAlignment="CENTER">
+                <Button fx:id="but_L" layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="L" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
@@ -313,37 +313,37 @@
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_Z" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="Z" textAlignment="CENTER">
+                <Button fx:id="but_Z" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="Z" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_X" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="X" textAlignment="CENTER">
+                <Button fx:id="but_X" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="X" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_C" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="C" textAlignment="CENTER">
+                <Button fx:id="but_C" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="C" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_V" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="V" textAlignment="CENTER">
+                <Button fx:id="but_V" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="V" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_B" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="B" textAlignment="CENTER">
+                <Button fx:id="but_B" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="B" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_N" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="N" textAlignment="CENTER">
+                <Button fx:id="but_N" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="N" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="but_M" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculate" text="M" textAlignment="CENTER">
+                <Button fx:id="but_M" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#charPressed" text="M" textAlignment="CENTER">
                     <font>
                         <Font name="Bebas Neue Regular" size="20.0" />
                     </font>
