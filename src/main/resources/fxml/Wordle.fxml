@@ -5,17 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" scaleShape="false" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WordleController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" scaleShape="false" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WordleController">
     <children>
-        <Text fill="#3c6e71" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Wordle" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+        <Text fill="#3c6e71" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Wordle" textAlignment="CENTER" visible="false" StackPane.alignment="TOP_CENTER">
             <font>
                 <Font name="Bebas Neue Regular" size="80.0" />
             </font>
             <StackPane.margin>
-                <Insets top="25.0" />
+                <Insets top="5.0" />
             </StackPane.margin>
         </Text>
-        <GridPane fx:id="grid" alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="400.0" vgap="10.0" StackPane.alignment="TOP_CENTER">
+        <GridPane fx:id="grid" alignment="CENTER" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="400.0" vgap="5.0" StackPane.alignment="TOP_CENTER">
             <columnConstraints>
                 <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
@@ -189,7 +189,7 @@
 
             </children>
             <StackPane.margin>
-                <Insets top="120.0" />
+                <Insets top="30.0" />
             </StackPane.margin>
         </GridPane>
         <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #353535;" StackPane.alignment="BOTTOM_CENTER">
