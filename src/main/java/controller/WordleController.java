@@ -12,6 +12,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import model.Wordle;
 
+import java.util.ArrayList;
+
 public class WordleController {
 
     private Wordle game;
@@ -19,6 +21,9 @@ public class WordleController {
     private int currentStart = 0;
 
     private boolean locked = false;
+
+    private ArrayList<Button> usedButtons = new ArrayList<Button>();
+    private ArrayList<String> usedChars = new ArrayList<String>();
 
     @FXML
     private GridPane grid;
@@ -34,7 +39,8 @@ public class WordleController {
         if ( actual < currentStart +5 ) {
             Label txt = (Label) grid.getChildren().get(actual);
             txt.setText(button.getText());
-
+            usedButtons.add(button);
+            //button.setStyle("-fx-background-color: #8F8F8F;");
             actual++;
         }
     }
@@ -45,6 +51,11 @@ public class WordleController {
             Label txt = (Label) grid.getChildren().get(actual-1);
             txt.setText("");
             actual--;
+            if (!usedChars.contains(usedButtons.get(usedButtons.size()-1).getText()) )
+            {
+                usedButtons.remove(usedButtons.size()-1);
+            }
+
         }
     }
 
@@ -64,7 +75,12 @@ public class WordleController {
                 } else if (game.isContainsCharacter(cha)) {
                     characters[i].setBackground(new Background(new BackgroundFill(Color.GOLD, CornerRadii.EMPTY, Insets.EMPTY)));
                 }
+                usedChars.add(characters[i].getText());
                 wordguess = wordguess+characters[i].getText();
+            }
+
+            for (int i = 0; i< usedButtons.size(); i++) {
+                usedButtons.get(i).setStyle("-fx-background-color: #8F8F8F;");
             }
 
             //System.out.println(wordguess);
