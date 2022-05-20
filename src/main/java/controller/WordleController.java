@@ -98,7 +98,14 @@ public class WordleController {
             if (word.matches(wordguess)) {
                 System.out.println("SIKERES");
                 try {
-                    switchToResults(actionEvent);
+                    switchToResults(actionEvent, true, currentStart/5);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            } else if (currentStart >= 30) {
+                System.out.println("VESZTES");
+                try {
+                    switchToResults(actionEvent, false, currentStart/5);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -107,10 +114,10 @@ public class WordleController {
         }
     }
 
-    public void switchToResults(ActionEvent actionEvent) throws IOException {
+    public void switchToResults(ActionEvent actionEvent, boolean win, int guess) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Results.fxml"));
         Parent root = fxmlLoader.load();
-        fxmlLoader.<ResultsController>getController().initdata("ALMAF");
+        fxmlLoader.<ResultsController>getController().initdata(game.getWord(),win,guess);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
