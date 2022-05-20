@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" scaleShape="false" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ResultsController">
+    <children>
+        <Text fill="#ffc02d" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Wordle Results" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+            <font>
+                <Font name="Bebas Neue Regular" size="80.0" />
+            </font>
+            <StackPane.margin>
+                <Insets top="30.0" />
+            </StackPane.margin>
+        </Text>
+      <Button fx:id="newgame" mnemonicParsing="false" onAction="#newGame" style="-fx-background-color: white;" text="New Game" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="30.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Bebas Neue Regular" size="30.0" />
+         </font>
+      </Button>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" StackPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="250.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="75.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <StackPane.margin>
+            <Insets top="200.0" />
+         </StackPane.margin>
+         <children>
+            <ProgressBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" />
+            <ProgressBar layoutX="110.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ProgressBar layoutX="110.0" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ProgressBar layoutX="110.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ProgressBar layoutX="110.0" layoutY="121.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ProgressBar layoutX="110.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ProgressBar layoutX="110.0" layoutY="193.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="250.0" progress="0.48" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: grey;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="1" textFill="WHITE">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="5.0" text="2" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="41.0" text="3" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="77.0" text="4" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="113.0" text="5" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="149.0" text="6" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="184.0" text="LOST" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Bebas Neue Regular" size="35.0" />
+               </font>
+            </Label>
+             <Label text="1" textFill="WHITE" GridPane.columnIndex="2">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="5.0" text="2" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="41.0" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="77.0" text="4" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="113.0" text="5" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="149.0" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+             <Label layoutX="53.0" layoutY="184.0" text="LOST" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                 <font>
+                     <Font name="Bebas Neue Regular" size="35.0" />
+                 </font>
+             </Label>
+         </children>
+      </GridPane>
+      <Text fill="WHITE" layoutX="50.0" layoutY="120.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess distribution" textAlignment="CENTER" StackPane.alignment="CENTER">
+         <font>
+            <Font name="Bebas Neue Regular" size="40.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="100.0" />
+         </StackPane.margin>
+      </Text>
+    </children>
+</StackPane>

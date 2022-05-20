@@ -2,7 +2,11 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Background;
@@ -10,8 +14,10 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 import model.Wordle;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class WordleController {
@@ -29,6 +35,9 @@ public class WordleController {
     private GridPane grid;
 
     @FXML
+    private Label labeltochange;
+
+    @FXML
     public void initialize() {
         this.game = new Wordle();
     }
@@ -40,7 +49,6 @@ public class WordleController {
             Label txt = (Label) grid.getChildren().get(actual);
             txt.setText(button.getText());
             usedButtons.add(button);
-            //button.setStyle("-fx-background-color: #8F8F8F;");
             actual++;
         }
     }
@@ -86,7 +94,28 @@ public class WordleController {
             //System.out.println(wordguess);
 
             currentStart = currentStart + 5;
+
+            if (word.matches(wordguess)) {
+                System.out.println("SIKERES");
+                try {
+                    switchToResults(actionEvent);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
         }
     }
+
+    public void switchToResults(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Results.fxml"));
+        Parent root = fxmlLoader.load();
+        fxmlLoader.<ResultsController>getController().initdata("ALMAF");
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+
 
 }
